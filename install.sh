@@ -60,7 +60,7 @@ main() {
   }
 
   # add to .zshrc if file exists, otherwise add to bash_profile
-  if [[ ! -s "$HOME/.bash_profile" && -s "$HOME/.zshrc" ]] ; then
+  if [[ -s "$HOME/.zshrc" ]] ; then
     profile_file="$HOME/.zshrc"
   else
     profile_file="$HOME/.bash_profile"
