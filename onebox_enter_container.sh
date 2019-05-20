@@ -6,13 +6,13 @@ function obc() {
     fi
 
     if [ -z "$2" ]; then
-        source "${BASH_SOURCE%/*}/read_target.sh"
+        source "$(dirname "$0")/read_target.sh"
     else
         user=$2
     fi
 
     # lyft.com repo is www2 service
-    if [ "$service" == "lyft.com" ]; then
+    if [[ "$service" == "lyft.com" ]]; then
         service="www2"
     fi
 

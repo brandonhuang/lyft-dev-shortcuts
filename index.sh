@@ -1,9 +1,8 @@
-source './devbox_tail_container.sh'
-source './devbox_enter_container.sh'
-source './onebox_tail_container.sh'
-source './onebox_enter_container.sh'
-source './onebox_enter.sh'
-source './onebox_read_target.sh'
-source './onebox_set_target.sh'
-source './lyft_npm_update_alias.sh'
-source './sync.sh'
+source "$(dirname "$0")/devbox_tail_container.sh"
+source "$(dirname "$0")/devbox_enter_container.sh"
+source "$(dirname "$0")/onebox_tail_container.sh"
+source "$(dirname "$0")/onebox_enter_container.sh"
+source "$(dirname "$0")/onebox_enter.sh"
+source "$(dirname "$0")/onebox_set_target.sh"
+source "$(dirname "$0")/lyft_npm_update_alias.sh"
+source "$(dirname "$0")/sync.sh"
