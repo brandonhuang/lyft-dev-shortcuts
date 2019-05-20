@@ -59,16 +59,11 @@ main() {
     exit 1
   }
 
-  # add to .profile if file exists, otherwise add to bash_profile
-  if [[ ! -s "~/.bash_profile" && -s "~/.profile" ]] ; then
-    profile_file="~/.profile"
-  else
-    profile_file="~/.bash_profile"
-  fi
+  # add to bash_profile
 
-  if ! grep -q 'git-completion.bash' "${profile_file}" ; then
-    printf "Adding source to ${profile_file}\n"
-    echo "source '$FP/sync.sh'" >> "${profile_file}"
+  if ! grep -q 'index.sh' ~/.bash_profile ; then
+    printf "Adding source to ~/.bash_profile\n"
+    echo "source '$FP/index.sh'" >> ~/.bash_profile
   else
     printf "${YELLOW}Source already exists in ${profile_file}, this is mostly likely due to a previous install, skipping...${NORMAL}\n"
   fi
