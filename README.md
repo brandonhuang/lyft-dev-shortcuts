@@ -12,7 +12,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/brandonhuang/lyft-dev-shor
 
 For changes to take effect, you'll have to restart terminal. If you want to update just the current window, you can run 
 ```
-source ~/bash_profile
+source ~/.zshrc
+source ~/.bash_profile
 ```
 
 ## Shortcuts
@@ -29,7 +30,7 @@ target YOUR_ONEBOX
 1. `ob` - enter onebox
 2. `obc` - enter the onebox container for current folder's service
 3. `obt` - tail web logs for the current folder's service
-4. `sync` - run hack script on the current folder's service
+4. `sync` - run hack sync script on the current folder's service
 5. `target` - set onebox target
 
 ### Misc
