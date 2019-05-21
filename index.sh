@@ -1,9 +1,14 @@
-abs_path="$(dirname "${BASH_SOURCE[0]}")"
-source "$abs_path/devbox_tail_container.sh"
-source "$abs_path/devbox_enter_container.sh"
-source "$abs_path/onebox_tail_container.sh"
-source "$abs_path/onebox_enter_container.sh"
-source "$abs_path/onebox_enter.sh"
-source "$abs_path/onebox_set_target.sh"
-source "$abs_path/lyft_npm_update_alias.sh"
-source "$abs_path/sync.sh"
+# Full path of the current script
+THIS=`readlink -f "${BASH_SOURCE[0]}" 2>/dev/null||echo $0`
+# The directory where current script resides
+DIR=`dirname "${THIS}"`
+
+echo $DIR
+source "$DIR/devbox_tail_container.sh"
+source "$DIR/devbox_enter_container.sh"
+source "$DIR/onebox_tail_container.sh"
+source "$DIR/onebox_enter_container.sh"
+source "$DIR/onebox_enter.sh"
+source "$DIR/onebox_set_target.sh"
+source "$DIR/lyft_npm_update_alias.sh"
+source "$DIR/sync.sh"
