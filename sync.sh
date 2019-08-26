@@ -6,7 +6,7 @@ function sync() {
     fi
 
     if [ -z "$2" ]; then
-        source "$(dirname "$0")/read_target.sh"
+        source "$DIR/read_target.sh"
     else
         user=$2
     fi
