@@ -10,7 +10,7 @@ Run this in your terminal of choice
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/brandonhuang/lyft-dev-shortcuts/master/install.sh)"
 ```
 
-For changes to take effect, you'll have to restart terminal. If you want to update just the current window, you can run 
+For changes to take effect, you'll have to restart terminal. If you want to update just the current window, you can run
 ```
 source ~/.zshrc
 source ~/.bash_profile
@@ -22,16 +22,13 @@ source ~/.bash_profile
 2. `dbt` - tail web logs for the current folder's service
 
 ### Onebox
-Before running any aliases, you'll have to set the onebox target:
+Before running any aliases, you'll have to set your onebox name:
 ```
-target YOUR_ONEBOX
+upstream YOUR_ONEBOX
 ```
 
 1. `ob` - enter onebox
 2. `obc` - enter the onebox container for current folder's service
 3. `obt` - tail web logs for the current folder's service
 4. `sync` - run hack sync script on the current folder's service
-5. `target` - set onebox target
-
-### Misc
-1. `lnua` - run `lyft_npm_update_alias`
+5. `upstream` - set upstream onebox name`

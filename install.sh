@@ -30,7 +30,7 @@ main() {
 
   if [ -d "$FP" ]; then
     printf "${YELLOW}You already have Lyft Dev Shortcuts installed.${NORMAL}\n"
-    printf "You'll need to remove $FP if you want to re-install.\n"
+    printf "Delete the last install ${RED}rm -rf $FP${NORMAL} before re-installing\n"
     exit
   fi
 
