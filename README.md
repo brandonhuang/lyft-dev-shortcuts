@@ -31,4 +31,4 @@ upstream YOUR_ONEBOX
 2. `obc` - enter the onebox container for current folder's service
 3. `obt` - tail web logs for the current folder's service
 4. `sync` - run hack sync script on the current folder's service
-5. `upstream` - set upstream onebox name`
+5. `upstream` - set upstream onebox name
